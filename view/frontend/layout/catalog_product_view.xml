@@ -12,9 +12,10 @@
         <referenceBlock name="product.info.details">
             <block class="LizardMedia\ProductAttachment\Block\Product\AttachmentTab" name="attachments.tab"
                    template="LizardMedia_ProductAttachment::product/view/attachment-tab.phtml" group="detailed_info">
-                <action method="setTitle">
-                    <argument translate="true" name="title" xsi:type="string">Attachments</argument>
-                </action>
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">Documents</argument>
+                    <argument name="sort_order" xsi:type="string">30</argument>
+                </arguments>
             </block>
         </referenceBlock>
     </body>
